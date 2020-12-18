@@ -18,7 +18,7 @@ Installation :
 - accédez à votre BDD via l'interface web exposée sur le port que vous avez spécifié (8529 par défaut) : 127.0.0.1:8529
 - votre login/mot de passe vous sera demandé (en fonction de ce que vous avez indiqué dans l'étape de démarrage de l'image docker)
 - une fois connecté, nous sommes redirigié vers la base de données "système". Nous allons créer une base de données de test et des collections qui vont contenir nos données. Chaque collection est un découpage de l'ensemble des données (de façon similaire à une table SQL). La base de données peuit être créée par l'interface web (panneau de gauche -> databases -> +). Une fois la base de données créée, on s'y connecte en cliquant sur l'onglet DB en haut à droite de l'écran. 
-- il nous reste à créer des collections, une pour nos futurs noeuds du graphe, que l'on nommera nodes, de type "Document", et une pour les arcs du graphe que l'on nommera edge, de type "Edge" (respecter ce nommage). 
+- il nous reste à créer des collections, une pour nos futurs noeuds du graphe, que l'on nommera nodes, de type "Document", et une pour les arcs du graphe que l'on nommera edges, de type "Edge" (respecter ce nommage). 
 
 - Importation des données : 
   - télécharger les fichiers nodes.json et edges.json présents sur ce dépôt
@@ -50,9 +50,9 @@ Nous allons explorer le domaine "http://thingin.orange.com/ifc/Meylan_v3/" qui c
 
 
 
-Utiliser le template de requpête suivant pour filtrer les objets par leur classe dans le domaine. Pour retrouver ces classes nous pouvons les rechercher sur le web, ou via le service dédié de thingin [indications pour le choix de classe à l'oral]. 
+Utiliser le template de requête suivant pour filtrer les objets par leur classe dans le domaine. Pour retrouver ces classes nous pouvons les rechercher sur le web, ou via le service dédié de thingin [indications pour le choix de classe à l'oral]. 
 
-
+``` 
 {
   "query": {
     "$domain": "http://thingin.orange.com/ifc/Meylan_v3/",
@@ -60,6 +60,7 @@ Utiliser le template de requpête suivant pour filtrer les objets par leur class
   },
   "view": {}
 }
+```
 
 
 Nous allons nous maintenant nous intéresser à un sous-ensemble des données et utiliser les classes sémantiques et le graphe pour filtrer les objets retournés. 
