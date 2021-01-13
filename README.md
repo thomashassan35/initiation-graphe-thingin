@@ -1,11 +1,10 @@
 #EN 
-# initiation-graphe-thingin
+# initiation-graph-thingin
 
-TP 2 : langages de requêtes NOSQL, BD graphe, requêtes sémantiques
+TP 2 : NOSQL requests, multi-model database, semantic queries
 
-Dans le dernier TP, nous avons mis en place injecté des données sur la plateforme thingin et brièvement aperçu son langage de requête pour observer ces données. 
-Dans ce TP, nous allons utiliser la base de données multi-model arangodb (qui est utilisée pour la plateforme thingin), et introduire son langage de requête (AQL).
-
+In the previous exercice, we injected soem data in the thingin platform and briefly used its query langage to observe our data
+In this exercice, we will use the multi-model database arangodb (which is th backend of thingin), and introduce its query langage (AQL) 
 
 
 Part 1 : multi-model database, smart city use case
