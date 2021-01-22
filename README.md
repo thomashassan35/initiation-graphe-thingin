@@ -3,8 +3,8 @@
 
 TP 2 : NOSQL requests, multi-model database, semantic queries
 
-In the previous exercice, we injected soem data in the thingin platform and briefly used its query langage to observe our data
-In this exercice, we will use the multi-model database arangodb (which is th backend of thingin), and introduce its query langage (AQL) 
+In the previous exercice, we injected some data in the thingin platform and briefly used its query langage to observe our data
+In this exercice, we will use the multi-model database arangodb (which is the backend of thingin), and introduce its query langage (AQL) 
 
 
 Part 1 : multi-model database, smart city use case
